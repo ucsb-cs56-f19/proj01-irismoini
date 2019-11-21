@@ -11,29 +11,24 @@
        <h1>Earthquake Search Results</h1>
 
 
-	            <h2> Results</h2>
-
+	       
         <table class="table">
-
-	    <tr>
-                <th>Distance (km)</th>
-                <td th:text="${eqSearch.distance}"></td>
-            </tr>
-            <tr>
-                <th>Minimum Magnitude</th>
-                <td th:text="${eqSearch.minmag}"></td>
-            </tr>
-
 
 	  <thead>
                 <tr>
-                    <th>Type</th>
-                </tr>
-            </thead>
+                     <th>Title</th>
+                    <th>Count</th>
+                    <th>Distance (km)</th>
+                    <th>Minimum Magnitude</th>
+		</tr>
+
+	  </thead>
             <tbody>
               <tr>
 		 <td><a th:href="${featureCollection.metadata.url}" th:text="${featureCollection.metadata.title}"></a></td>
-		  <td th:text="${featureCollection.metadata.count}"></td>
+		 <td th:text="${featureCollection.metadata.count}"></td>
+		 <td th:text="${eqSearch.distance}"></td>
+		 <td th:text="${eqSearch.minmag}"></td>
 		</tr>
             </tbody>
         </table>
