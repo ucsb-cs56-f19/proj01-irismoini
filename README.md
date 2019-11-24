@@ -1,11 +1,11 @@
 link to webpage of documentation:
-https://ucsb-cs56-f19.github.io/lab07-irismoini/
+https://ucsb-cs56-f19.github.io/proj01-irismoini/
 
 link to heroku webapp:
-https://cs56-f19-lab07-irismoini.herokuapp.com/
+https://cs56-f19-proj01-irismoini.herokuapp.com
 
 link to Travis CI:
-https://travis-ci.org
+https://travis-ci.org/ucsb-cs56-f19/proj01-irismoini/builds/616392326
 
 A simple Spring Boot webapp using:
 * Thymeleaf templating
