@@ -1,4 +1,6 @@
-package hello;
+package earthquakes;
+
+import earthquakes.controllers.HomeController;
 
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -21,7 +23,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(WebController.class)
+@WebMvcTest(HomeController.class)
+
 public class HomePageTest {
 
     @Autowired
