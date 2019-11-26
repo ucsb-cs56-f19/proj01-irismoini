@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">hello</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">earthquakes</a></div>
 <h2 title="Class WebController" class="title">Class WebController</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>hello.WebController</li>
+<li>earthquakes.WebController</li>
 </ul>
 </li>
 </ul>
@@ -179,16 +179,16 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEarthquakesResults(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,hello.EqSearch)">getEarthquakesResults</a></span>&#8203;(org.springframework.ui.Model&nbsp;model,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEarthquakesResults(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,earthquakes.EqSearch)">getEarthquakesResults</a></span>&#8203;(org.springframework.ui.Model&nbsp;model,
                      org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken&nbsp;oAuth2AuthenticationToken,
-                     <a href="EqSearch.html" title="class in hello">EqSearch</a>&nbsp;eqSearch)</code></th>
+                     <a href="EqSearch.html" title="class in earthquakes">EqSearch</a>&nbsp;eqSearch)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEarthquakesSearch(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,hello.EqSearch)">getEarthquakesSearch</a></span>&#8203;(org.springframework.ui.Model&nbsp;model,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEarthquakesSearch(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,earthquakes.EqSearch)">getEarthquakesSearch</a></span>&#8203;(org.springframework.ui.Model&nbsp;model,
                     org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken&nbsp;oAuth2AuthenticationToken,
-                    <a href="EqSearch.html" title="class in hello">EqSearch</a>&nbsp;eqSearch)</code></th>
+                    <a href="EqSearch.html" title="class in earthquakes">EqSearch</a>&nbsp;eqSearch)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -302,7 +302,7 @@ public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.bas
                        org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken&nbsp;oAuth2AuthenticationToken)</pre>
 </li>
 </ul>
-<a id="getEarthquakesSearch(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,hello.EqSearch)">
+<a id="getEarthquakesSearch(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,earthquakes.EqSearch)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -311,10 +311,10 @@ public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.bas
 <pre class="methodSignature">@GetMapping("/earthquakes/search")
 public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getEarthquakesSearch&#8203;(org.springframework.ui.Model&nbsp;model,
                                    org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken&nbsp;oAuth2AuthenticationToken,
-                                   <a href="EqSearch.html" title="class in hello">EqSearch</a>&nbsp;eqSearch)</pre>
+                                   <a href="EqSearch.html" title="class in earthquakes">EqSearch</a>&nbsp;eqSearch)</pre>
 </li>
 </ul>
-<a id="getEarthquakesResults(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,hello.EqSearch)">
+<a id="getEarthquakesResults(org.springframework.ui.Model,org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken,earthquakes.EqSearch)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -323,7 +323,7 @@ public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.bas
 <pre class="methodSignature">@GetMapping("/earthquakes/results")
 public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getEarthquakesResults&#8203;(org.springframework.ui.Model&nbsp;model,
                                     org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken&nbsp;oAuth2AuthenticationToken,
-                                    <a href="EqSearch.html" title="class in hello">EqSearch</a>&nbsp;eqSearch)</pre>
+                                    <a href="EqSearch.html" title="class in earthquakes">EqSearch</a>&nbsp;eqSearch)</pre>
 </li>
 </ul>
 </li>

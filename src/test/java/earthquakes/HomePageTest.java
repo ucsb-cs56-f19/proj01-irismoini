@@ -1,6 +1,6 @@
-package hello;
+package earthquakes;
 
-import hello.controllers.HomeController;
+import earthquakes.controllers.HomeController;
 
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

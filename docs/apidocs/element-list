@@ -1,4 +1,4 @@
-hello
-hello.controllers
-hello.entities
-hello.geojson
+earthquakes
+earthquakes.controllers
+earthquakes.entities
+earthquakes.geojson
