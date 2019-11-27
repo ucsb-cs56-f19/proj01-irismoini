@@ -8,28 +8,28 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestTemplate;
 
 
-
- import org.springframework.beans.factory.annotation.Value;
- import org.springframework.http.HttpEntity;
- import org.springframework.http.HttpHeaders;
- import org.springframework.http.HttpMethod;
- import org.springframework.http.HttpStatus;
- import org.springframework.http.MediaType;
- import org.springframework.http.ResponseEntity;
- import org.springframework.stereotype.Service;
- import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 
 public class LocationQueryService {
 
     private Logger logger = LoggerFactory.getLogger(LocationQueryService.class);
-
+    
     public String getJSON(String location) {
+    /*
 	 String fakeJson = "{ \"key\": \"value\" }";
          String json = fakeJson;
          logger.info("json=" + json);
          return json;
+    */	
 	
-	/*
 	        RestTemplate restTemplate = new RestTemplate();
 
          HttpHeaders headers = new HttpHeaders();
@@ -38,11 +38,10 @@ public class LocationQueryService {
 
          HttpEntity<String> entity = new HttpEntity<>("body", headers);
 
-         String uri = "https://earthquake.usgs.gov/fdsnws/event/1/query";
-         double ucsbLat = 34.4140;
-         double ucsbLong = -119.8489;
-         String params = String.format("?format=geojson&minmagnitude=%d&maxradiuskm=%d&latitude=%f&longitude=%f",
-            minmag,distance,ucsbLat,ucsbLong);
+         String uri = "https://nominatim.openstreetmap.org/search/";
+
+    String params = String.format("%s?format=json",
+            location);
 
          String url = uri + params;
          logger.info("url=" + url);
@@ -56,9 +55,9 @@ public class LocationQueryService {
          } catch (HttpClientErrorException e) {
              retVal = "{\"error\": \"401: Unauthorized\"}";
          }
-         logger.info("from EarthquakeQueryService.getJSON: " + retVal);
+         logger.info("from LocationQueryService.getJSON: " + retVal);
          return retVal;
-	*/
+       
     }
 
 }
